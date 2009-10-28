@@ -1,0 +1,39 @@
+
+<% for(var i=0;i<notes.length;i++) {%>
+	<div class="main body note">
+		<div class="horizontal-edge note-top-bar">
+			<div class="corner top-right"></div>
+			<div class="corner top-left"></div>
+			<div class="middle"></div>
+		</div>
+		<div class="copy">
+			<ul id="note-tags" class="tags">
+				<% for(var j=0;j<notes[i].note.tags.length;j++) {%> 
+					<li>
+						<div class="horizontal-edge">
+							<div class="corner top-right"></div>
+							<div class="corner top-left"></div>
+							<div class="middle"></div>
+						</div>
+						<div class="text"><a href="javascript:void(0)"><%=notes[i].note.tags[j].name%></a></div>
+						<div class="horizontal-edge">
+							<div class="corner bottom-right"></div>
+							<div class="corner bottom-left"></div>
+							<div class="middle"></div>
+						</div>
+					</li>
+				<% }%>
+			</ul>
+			<div style="clear:both;"></div>
+			<div class="note-text">
+				<p><%= notes[i].note.content %></p>
+			</div>	
+		</div>
+		<div class="horizontal-edge">
+			<div class="corner bottom-right"></div>
+			<div class="corner bottom-left"></div>
+			<div class="middle"></div>
+		</div>
+	</div>
+<% }%>
+

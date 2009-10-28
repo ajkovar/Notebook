@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <title>Notebook++</title>
+  <link rel="stylesheet" type='text/css' href='stylesheets/style.css' />
+
+<!--  <script type="text/javascript" src="javascripts/jquery/jquery-1.3.2.js"></script>-->
+<!--  <script type="text/javascript" src="javascripts/test.js"></script>-->
+
+  </head>
+
+
+  <body id="clickTest">
+  <div class="content">
+	<div class="header">
+		<h1>Notebook++</h1>
+		A Notebook, Improved
+	</div>
+
+	<div id="tagList">Loading...</div>
+	<div id="noteList" class="contentArea"></div>
+
+
+	<div style="clear:both"></div>
+  </div>
+ <script type='text/javascript' src='javascripts/jquery/jquery-1.3.2.js'></script>
+<script type='text/javascript' src='jmvc/include.js'></script>
+<script type='text/javascript' src='jmvc/plugins/lang/init.js'></script>
+<script type='text/javascript' src='jmvc/plugins/view/view.js'></script>
+<script>
+$(function(){
+	var view = new jQuery.View({view: "views/sidebar/list.ejs" });
+	var data = {tags:[{tag:{id:1, name:"testing testing tag"}}]};
+	try {
+	var result = view.render(data);
+	}
+	catch(e) {
+	var error = e;
+	
+	console.log("error");	
+}
+	$("#tagList").html(result);
+	console.log("hi");
+});
+
+</script>
+  </body>
+</html>

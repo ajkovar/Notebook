@@ -1,0 +1,34 @@
+<h2>Listing users</h2>
+<%$0%>
+<%self.type%>
+<% self.methods.each do |method|%>
+<%method%>
+<%	%>
+<% end %>
+
+<table>
+  <tr>
+    <th>First name</th>
+    <th>Last name</th>
+    <th>Active</th>
+  </tr>
+
+
+<% @users.each do |user| %>
+  <tr>
+    <td><%=h user.first_name %></td>
+    <td><%=h user.last_name %></td>
+    <td><%=h user.active %></td>
+    <td><%= link_to 'Show', user %></td>
+    <td><%= link_to 'Edit', edit_user_path(user) %></td>
+    <td><%= link_to 'Destroy', user, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+<% ($:).each do |path|%>
+<%path %>
+<% end %>
+
+<br />
+
+<%= link_to 'New user', new_user_path %>

@@ -1,0 +1,14 @@
+2.0.0 beta
+- Documentation Engine
+- Models Working
+
+2.0 alpha 2
+- Selenium Integration
+
+2.0 alpha 1
+- Using jQuery by default
+- Only Stateful
+- New Class
+- Fixing Syntax
+
+

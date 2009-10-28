@@ -1,0 +1,29 @@
+<div class="main body">
+	<div class="horizontal-edge">
+		<div class="corner top-right"></div>
+		<div class="corner top-left"></div>
+		<div class="middle"></div>
+	</div>
+	<div class="copy">
+		<% form_for(@user) do |f| %>
+		  <%= f.error_messages %>
+		  <p>
+		    <%= f.label :login %><br />
+		    <%= f.text_field :login %>
+		  </p>
+		  <p>
+		    <%= f.label :password %><br />
+		    <%= f.password_field :password %>
+		  </p>
+		  <p>
+		    <%= f.submit 'Login' %>
+		  </p>
+		<% end %>	
+	</div>
+	<div class="horizontal-edge">
+		<div class="corner bottom-right"></div>
+		<div class="corner bottom-left"></div>
+		<div class="middle"></div>
+	</div>
+</div>
+

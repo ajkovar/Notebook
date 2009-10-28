@@ -1,0 +1,29 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html>
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=windows-1250">
+  <title>Notebook++</title>
+  <%= stylesheet_link_tag 'style' %>
+  <%= javascript_include_tag "jquery/jquery-1.3.2.js", "test" %>
+
+<!--  <script type="text/javascript" src="javascripts/jquery/jquery-1.3.2.js"></script>-->
+<!--  <script type="text/javascript" src="javascripts/test.js"></script>-->
+
+  </head>
+  <body id="clickTest">
+  <div class="content">
+	<div class="header">
+		<h1>Notebook++</h1>
+		A Notebook, Improved
+	</div>
+
+<%= yield %>
+
+
+	<div style="clear:both"></div>
+  </div>
+ <script type='text/javascript' src='jmvc/include.js?note,development'></script>
+
+  </body>
+</html>

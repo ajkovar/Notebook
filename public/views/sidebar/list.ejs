@@ -1,0 +1,38 @@
+	<div class="main sidebar">
+		<div class="horizontal-edge">
+			<div class="corner top-right"></div>
+			<div class="corner top-left"></div>
+			<div class="middle"></div>
+		</div>
+		<div id="trash">
+			<!--<img src="images/trash10.jpg" />-->
+			<div></div>
+		</div>
+		<div class="copy">
+			<h2>Tags</h2>
+			<ul id="sidebar-tags" class="tags">
+				
+			<% for(var i=0;i<tags.length;i++) {%>
+			       <li class="tag">
+			       		<div class="horizontal-edge">
+							<div class="corner top-right"></div>
+							<div class="corner top-left"></div>
+							<div class="middle"></div>
+						</div>
+						<div class="text"><a  href="javascript:void(0);"><%=tags[i].tag.name%></a></div>
+						<div class="horizontal-edge">
+							<div class="corner bottom-right"></div>
+							<div class="corner bottom-left"></div>
+							<div class="middle"></div>
+						</div>
+					</li>
+			<% }%>
+			</ul>
+			<div style="clear:both;"></div>
+		</div>
+		<div class="horizontal-edge">
+			<div class="corner bottom-right"></div>
+			<div class="corner bottom-left"></div>
+			<div class="middle"></div>
+		</div>
+	</div>

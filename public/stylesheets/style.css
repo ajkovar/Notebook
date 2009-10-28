@@ -1,0 +1,175 @@
+body{
+color:#666;
+padding:0px;
+margin:0px;
+
+}
+a{
+color:#668;
+}
+h1{
+font-size:21px;
+line-height:22px;
+color:#307;
+margin:0px;
+}
+h2{
+font-size:14px;
+line-height:14px;
+color:#418;
+margin:0px;
+}
+.content{
+margin:20px 0px 0px 20px;  
+background-color:#ddf;
+}
+.content .header{
+padding:15px 20px 15px 20px;
+background: top left no-repeat url(../images/trp2.jpg) #ddf;
+}
+.content .main{
+font-size:.8em;
+margin-bottom:10px;
+background-color: #eef;
+background-color: #eef;
+float:left;
+}
+.content .main .copy table {
+margin-top:10px;
+
+}
+.content .main .copy table th, .content .main .copy table td{
+padding-right:15px;
+}
+.content .main .copy table td{
+}
+.content .sidebar{
+margin-left:10px;
+width:200px;
+}
+.content .sidebar .copy{
+padding:15px;
+} 
+.content .body{
+margin-left:10px;
+
+} 
+.content .body .copy{
+padding:0px 10px 0px 10px;
+} 
+.content .body .copy p {
+margin:2px;
+}
+#trash {
+	overflow:hidden;
+	height:0px;
+	text-align:center;
+	width:100%;
+	
+}
+#trash div {
+	height:60px;
+	background:url(../images/trash.png) center no-repeat;
+}
+#trash div.active {
+	background:url(../images/trash-hover.png) center no-repeat;
+}
+
+/**********************/
+/*tags*/
+ul.tags{
+font-size:.8em;
+margin:0px;
+padding:0px;
+list-style-type:none;
+display:block;
+}
+ul.tags li {
+float:left;
+margin:2px;
+background-color:#ddf;
+}
+ul.tags li a{
+text-decoration:none;
+
+padding:1px;
+
+}
+ul.tags .horizontal-edge {
+height:3px;
+}
+ul.tags .corner, ul.tags .middle{
+height:3px;
+}
+ul.tags .corner {
+width:3px;
+}
+ul.tags .top-right {
+float:right;
+background: top left no-repeat url(../images/tags/trc.png) #eef;
+} 
+ul.tags .top-left {
+float:left;
+background: top left no-repeat url(../images/tags/tlc.png) #eef;
+}
+ul.tags .bottom-right {
+float:right;
+background: top left no-repeat url(../images/tags/brc.png) #eef;
+} 
+ul.tags .bottom-left {
+float:left;
+background: top left no-repeat url(../images/tags/blc.png) #eef;
+}
+ul.tags .middle {
+background-color: #ddf;
+}
+
+/**********************/
+/*main rounded edges*/
+
+.content .horizontal-edge {
+height:5px;
+}
+.content .corner, .content .middle{
+height:5px;
+}
+.content .corner {
+width:5px;
+}
+.content .middle {
+background-color: #eef;
+}
+.content .top-right {
+float:right;
+background: top left no-repeat url(../images/notes/trc.png) #eef;
+} 
+.content .top-left {
+float:left;
+background: top left no-repeat url(../images/notes/tlc.png) #eef;
+}
+.content .bottom-right {
+float:right;
+background: bottom left no-repeat url(../images/notes/brc.png) #eef;
+} 
+.content .bottom-left {
+float:left;
+background: bottom left no-repeat url(../images/notes/blc.png) #eef;
+}
+.content .note-top-bar .middle {
+/*background-color: #cce;
+border-bottom: solid 1px #cce;*/
+}
+.content .note-top-bar .top-right{
+/*background: top left no-repeat url(../images/notes/trc-dark.png) #cce;
+border-bottom: solid 1px #cce;*/
+}
+.content .note-top-bar .top-left{
+/*background: top left no-repeat url(../images/notes/tlc-dark.png) #cce;	
+border-bottom: solid 1px #cce;*/
+}
+
+.content .floatRight{
+float:right;
+margin-top:-20px;
+margin-right:15px;
+}
